@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-export const Article = ({subTitle, text }) => {
+export const Article = ({ subTitle, text }) => {
     return (
         <li className="list__item">
             <h2>{subTitle}</h2>

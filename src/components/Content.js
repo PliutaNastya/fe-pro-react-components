@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Article} from "./Article";
+import { Article } from "./Article";
 
 export const Content = ({ title }) => {
     const data = [
@@ -81,4 +81,8 @@ export const Content = ({ title }) => {
             </section>
         </main>
     )
+}
+
+Content.propTypes = {
+    title: PropTypes.string.isRequired,
 }

@@ -1,28 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {NavItem} from "./NavItem";
+import { NavItem } from "./NavItem";
 
 export const Header = ({ logoName }) => {
 
     const data = [
         {
             anchor: '/',
-            children: 'Home',
+            name: 'Home',
             id: 1,
         },
         {
             anchor: '/#about',
-            children: 'About',
+            name: 'About',
             id: 2,
         },
         {
             anchor: '/#contact',
-            children: 'Contactus',
+            name: 'Contact us',
             id: 3,
         },
         {
             anchor: '/#help',
-            children: 'Help Page',
+            name: 'Help page',
             id: 4,
         }
     ]
@@ -32,8 +32,8 @@ export const Header = ({ logoName }) => {
                 <a href="" className="logo">{logoName}</a>
                 <nav>
                     <ul className="nav-list">
-                        {data.map(({anchor, children, id}) => {
-                            return <NavItem key={id} anchor={anchor} children={children}/>
+                        {data.map(({anchor, name, id}) => {
+                            return <NavItem key={id} anchor={anchor} name={name}/>
                         })}
                     </ul>
                 </nav>

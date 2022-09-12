@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const NavItem = ({ anchor, children }) => {
+export const NavItem = ({ anchor, name }) => {
     return (
         <li className="nav-list__item">
             <a href={anchor}>
-                {children}
+                {name}
             </a>
         </li>
     )
